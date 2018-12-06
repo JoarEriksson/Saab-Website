@@ -116,8 +116,9 @@ body {
 .header-icon img {
     width: 100%;
     margin-bottom: 10px;
-    opacity: 0.5;
-
+    opacity: 0.2;
+    transform: scale(2.5);
+    margin-top: 15px;
 }
 
 header {
@@ -127,7 +128,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0px;
-   
+    overflow: hidden;
 
 }
 
@@ -194,6 +195,14 @@ header nav ul li a {
         width: 100px;
         float: left;
         padding: 0px 0px 0px 20px;
+    }
+    .header-icon img {
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.2;
+        transform: scale(2.5) rotate(20deg);
+        margin-left: -12px;
+        margin-top: 20px;
     }
 }
 
@@ -289,6 +298,7 @@ header nav ul li a {
     .index-links div h3 {
         line-height: 210px;
     }
+ 
 }
 /*footer*/
 
@@ -309,15 +319,16 @@ footer {
 footer ul {
     width: fit-content;
     float: left;
-    padding-left: 20px;
+
 }
  footer ul li {
    display: block;
    list-style: none;
+   margin-top: 10px;
 }
  footer ul li a {
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     color: floralwhite;
     line-height: 20px;
 }
@@ -335,4 +346,16 @@ footer ul {
     margin-bottom: 10px;
 
     
+}
+@media only screen and (min-width: 1000px) {
+    footer ul li a {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: floralwhite;
+        line-height: 20px;
+    }
+    footer ul li {
+        display: block;
+        list-style: none;
+     }
 }
